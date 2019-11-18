@@ -43,6 +43,10 @@ module.exports = {
 
     //delete
     deleteTracker(req, res){
+        const {index} = req.params;
+
+        tracker.splice(index, 1);
+
         res.status(200).send(tracker);
     },
 
