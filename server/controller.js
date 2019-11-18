@@ -52,6 +52,10 @@ module.exports = {
 
     //put
     editTracker(req, res){
+        const {index, newTracker} = req.body;
+
+        tracker[index].info = newTracker;
+
         res.status(200).send(tracker);
     }
 };
