@@ -5,6 +5,7 @@ const tracker = [
         grams: 12,
         units:'',
         time: '12:00',
+        timeDay: 'am',
         date: '11/18/19'
     },
     {
